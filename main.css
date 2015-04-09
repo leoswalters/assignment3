@@ -1,0 +1,607 @@
+/*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/*=============================================================
+Dev Challenge CSS - Version 2.0
+===============================================================
+*/
+
+body {
+    width:960px;
+    padding:0 20px 0 20px;
+
+}
+
+
+header {
+    width:100%;
+    margin:25px 0 10px 0;
+    display:block;
+    height:75px;
+
+    border-bottom: solid 20px grey;
+    /*
+    border-width:10px 10px 10px 10px;
+
+
+    /*border-image: url(../img/horizonal_border.png);
+
+    border-image: url(../img/horizonal_border.png) 25 30 10 20 repeat stretch;
+
+
+    border-image: url(../img/horizontal_border.png) 25 30 10 20 repeat stretch;
+    */
+
+    -webkit-border-image:url(../img/horizontal_border.png) 30 30 round; /* Safari 3.1-5 */
+    -o-border-image:url(../img/horizontal_border.png) 30 30 round; /* Opera 11-12.1 */
+    border-image:url(../img/horizontal_border.png) 30 30 round;
+
+     /* CSS for bottom border - should be able to use an image for the line effect
+    border-bottom: url(horizonal_border.png): 15px repeat-x;
+    */
+}
+
+header img {
+    float:left;
+    padding:0 10px 15px 0;
+}
+
+header h1 {
+    float:left;
+    margin:-6px 0 -15px -5px;
+    font-family: 'Yellowtail', cursive;
+    font-size: 36px;
+}
+
+header h2 {
+    padding:33px 0 0 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    color:#888888   ;
+    text-transform: uppercase;
+    margin:0;
+}
+
+.share-icons {
+    display:inline-block;
+    float:right;
+    width:230px;
+    padding:0;
+    margin:-40px -8px 0 0;
+    text-align:right;
+}
+
+.share-icons img {
+    padding:0 0 0 3px;
+    margin:0;
+}
+
+.share-icons ul {
+    margin:0px;
+
+}
+
+.share-icons li {
+
+    display:inline;
+    padding:0 0 0 -10px;
+
+}
+
+li:nth-child(7) img {
+    padding-left:10px;
+}
+
+article h1 {
+    font-family:'Oswald', sans-serif;
+    font-size:2em;
+    margin:30px 0 -20px 0px;
+    padding:0;
+}
+
+article h2 {
+    font-family: 'Droid Serif', serif;
+    margin:0;
+    padding:0;
+    font-size:1em;
+    color:#595959;
+    padding:15px 0 10px 0;
+}
+
+.post-time-stamp {
+    font-family:'Oswald', sans-serif;
+    text-transform:uppercase;
+    font-weight:lighter;
+    color:#b8b8b8;
+    font-size:0.75em;
+    margin:15px 0 0 0;
+    letter-spacing: 1px;
+}
+
+.print-icon {
+    float:right;
+    display:block;
+    width:55px;
+    height:10px;
+    margin:-23px -11px 13px 0;
+}
+
+.print-icon img{
+    width:13px;
+    height:10px;
+    padding:0 0 2px 0;
+
+
+}
+
+.print-icon p{
+    font-family:'Oswald', sans-serif;
+    display:inline;
+    text-align:right;
+    text-transform:uppercase;
+    font-weight:lighter;
+    color:#b8b8b8;
+    font-size:0.75em;
+}
+
+.article-image {
+    width:100%;
+    margin:20px 0 0 0;
+
+}
+
+article p {
+    font-family: 'Droid Serif', serif;
+    text-indent:1.5em;
+    margin:15px 0 20px 0;
+    font-size:1em;
+    color:#878787;
+    font-weight:normal;
+}
+
+.ingredients {
+
+    font-family:'Patrick Hand', cursive;
+    font-size:1.25em;
+    font-weight:lighter;
+    color:#939393;
+    margin:30px 0 0 0;
+    height:325px;
+    width:100%;
+
+    background-image: url(../img/list-bg.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    /*background-color: lightblue;*/
+
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+    -webkit-column-gap: 50px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 50px; /* Firefox */
+    column-gap: 50px;
+
+    -webkit-column-width: 100px; /* Chrome, Safari, Opera */
+    column-width: 100px;
+
+}
+
+.ingredients-left-side {
+    margin:40px 0 0px 75px;
+    height:325px;
+    line-height: 1.65em;
+}
+
+.ingredients-right-side {
+    margin:0px 0 0px 0px;
+    height:325px;
+    line-height: 1.65em;
+}
+
+.author {
+    font-family:'Droid Serif', serif;
+    margin:50px 0 0 0;
+    height:150px;
+    width:100%;
+    padding:20px 0 0 0;
+
+    border-top: solid 20px grey;
+    /*
+    border-width:10px 10px 10px 10px;
+
+
+    /*border-image: url(../img/horizonal_border.png);
+
+    border-image: url(../img/horizonal_border.png) 25 30 10 20 repeat stretch;
+
+
+    border-image: url(../img/horizontal_border.png) 25 30 10 20 repeat stretch;
+    */
+
+    -webkit-border-image:url(../img/horizontal_border.png) 30 30 round; /* Safari 3.1-5 */
+    -o-border-image:url(../img/horizontal_border.png) 30 30 round; /* Opera 11-12.1 */
+    border-image:url(../img/horizontal_border.png) 30 30 round;
+
+
+}
+
+.author img {
+    display:inline-block;
+    float:left;
+    margin:0 20px 0 0;
+}
+
+.author h2 {
+    display:inline-block;
+    float:left;
+    font-size:1.25em;
+    font-weight: normal;
+    padding:0;
+}
+
+.author h6 {
+    display:inline-block;
+    font-size:0.95em;
+    color:#595959;
+    float:left;
+    padding:0;
+    margin:30px 0 0 -180px;
+    width:560px;
+    line-height: 1.50em;
+}
+
+.author button {
+    font-family:'Oswald', sans-serif;
+    background-color:#bc7058;
+    text-transform: uppercase;
+    font-weight:lighter;
+    height:50px;
+    width:180px;
+    color:#fff;
+    border:none;
+    letter-spacing: 0.5px;
+    display:inline-block;
+    float:right;
+    margin:5px 0 0 0;
+}
+
+footer {
+    font-family:'Droid Serif', serif;
+    font-size:.85em;
+    color:#AAADB7;
+    text-align:center;
+
+    letter-spacing: 0.25px;
+    border-top: 1px solid #e2e2e2;
+    margin:50px 0 0 0;
+}
+
+footer img {
+    margin:-25px 5px 0 5px;
+    padding:0 10px 0 10px;
+    background-color: white;
+    z-index: 10;
+}
+
+footer p {
+    margin:10px 0 0 0;
+}
