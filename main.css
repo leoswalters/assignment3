@@ -523,25 +523,10 @@ article p {
     height:150px;
     width:100%;
     padding:20px 0 0 0;
-
     border-top: solid 20px grey;
-    /*
-    border-width:10px 10px 10px 10px;
-
-
-    /*border-image: url(../img/horizonal_border.png);
-
-    border-image: url(../img/horizonal_border.png) 25 30 10 20 repeat stretch;
-
-
-    border-image: url(../img/horizontal_border.png) 25 30 10 20 repeat stretch;
-    */
-
     -webkit-border-image:url(../img/horizontal_border.png) 30 30 round; /* Safari 3.1-5 */
     -o-border-image:url(../img/horizontal_border.png) 30 30 round; /* Opera 11-12.1 */
     border-image:url(../img/horizontal_border.png) 30 30 round;
-
-
 }
 
 .author img {
