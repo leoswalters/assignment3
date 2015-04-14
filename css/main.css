@@ -42,15 +42,6 @@ html {
     line-height: 1.4;
 }
 
-
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-
 img {
     vertical-align: middle;
 }
@@ -231,12 +222,9 @@ textarea {
     }
 }
 
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 
 body {
     margin-top:25px;
@@ -366,31 +354,31 @@ article p {
 }
 
 .ruled-paper {
-    height:350px;
+    height:300px;
     background-image: url(../img/list-bg.png);
     background-repeat:no-repeat;
     width:100%;
-    background-size: contain;
+    background-size: cover;
 }
 
 .ingredients-left-side {
     font-family:'Patrick Hand', cursive;
-    font-size:1.25em;
+    font-size:1.40em;
     font-weight:lighter;
     color:#939393;
     margin:40px 0 0px 75px;
-    height:325px;
-    line-height: 1.65em;
+    /*height:325px; */
+    line-height: 1.50em;
 }
 
 .ingredients-right-side {
     font-family:'Patrick Hand', cursive;
-    font-size:1.25em;
+    font-size:1.40em;
     font-weight:lighter;
     color:#939393;
     margin:40px 0 0px 0px;
-    height:325px;
-    line-height: 1.65em;
+    /*height:325px;*/
+    line-height: 1.50em;
 }
 
 .author-section {
@@ -399,6 +387,7 @@ article p {
     -o-border-image:url(../img/horizontal_border.png) 30 30 round; /* Opera 11-12.1 */
     border-image:url(../img/horizontal_border.png) 30 30 round;
     padding-top:30px;
+    margin-top:20px;
 }
 
 .author {
@@ -425,7 +414,7 @@ article p {
     color:#595959;
     float:left;
     padding:0;
-    width:560px;
+    width:90%;
     line-height: 1.50em;
     margin:-40px 0 0 90px;
 }
@@ -467,6 +456,4 @@ footer img {
 footer p {
     margin:10px 0 0 0;
 }
-
-
 
