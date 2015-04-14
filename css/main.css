@@ -11,18 +11,11 @@
    ========================================================================== */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
+h1, h2, h3, h4, h5, h6, p,
+a, em, img, strong, b, u, i, center, ul, li, form, label,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+article, figure, figcaption, footer, header, hgroup, nav, section,
+time {
     margin: 0;
     padding: 0;
     border: 0;
@@ -37,19 +30,11 @@ body {
 ol, ul {
     list-style: none;
 }
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
 
 html {
     color: #222;
@@ -57,49 +42,7 @@ html {
     line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+img {
     vertical-align: middle;
 }
 
@@ -131,25 +74,6 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==========================================================================
@@ -204,27 +128,6 @@ textarea {
     visibility: hidden;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -319,44 +222,21 @@ textarea {
     }
 }
 
-/*=============================================================
-Dev Challenge CSS - Version 2.0
-===============================================================
-*/
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
 
 body {
-    width:960px;
-    padding:0 20px 0 20px;
-
+    margin-top:25px;
 }
 
-
 header {
-    width:100%;
     margin:25px 0 10px 0;
-    display:block;
-    height:75px;
-
+    height:100px;
     border-bottom: solid 20px grey;
-    /*
-    border-width:10px 10px 10px 10px;
-
-
-    /*border-image: url(../img/horizonal_border.png);
-
-    border-image: url(../img/horizonal_border.png) 25 30 10 20 repeat stretch;
-
-
-    border-image: url(../img/horizontal_border.png) 25 30 10 20 repeat stretch;
-    */
-
     -webkit-border-image:url(../img/horizontal_border.png) 30 30 round; /* Safari 3.1-5 */
     -o-border-image:url(../img/horizontal_border.png) 30 30 round; /* Opera 11-12.1 */
     border-image:url(../img/horizontal_border.png) 30 30 round;
-
-     /* CSS for bottom border - should be able to use an image for the line effect
-    border-bottom: url(horizonal_border.png): 15px repeat-x;
-    */
 }
 
 header img {
@@ -366,7 +246,7 @@ header img {
 
 header h1 {
     float:left;
-    margin:-6px 0 -15px -5px;
+    margin:-2px 0 -15px -5px;
     font-family: 'Yellowtail', cursive;
     font-size: 36px;
 }
@@ -381,12 +261,8 @@ header h2 {
 }
 
 .share-icons {
-    display:inline-block;
     float:right;
-    width:230px;
-    padding:0;
-    margin:-40px -8px 0 0;
-    text-align:right;
+    margin-top:10px;
 }
 
 .share-icons img {
@@ -396,14 +272,11 @@ header h2 {
 
 .share-icons ul {
     margin:0px;
-
 }
 
 .share-icons li {
-
     display:inline;
     padding:0 0 0 -10px;
-
 }
 
 li:nth-child(7) img {
@@ -412,15 +285,13 @@ li:nth-child(7) img {
 
 article h1 {
     font-family:'Oswald', sans-serif;
+    font-weight:bold;
     font-size:2em;
     margin:30px 0 -20px 0px;
-    padding:0;
 }
 
 article h2 {
     font-family: 'Droid Serif', serif;
-    margin:0;
-    padding:0;
     font-size:1em;
     color:#595959;
     padding:15px 0 10px 0;
@@ -436,36 +307,40 @@ article h2 {
     letter-spacing: 1px;
 }
 
-.print-icon {
-    float:right;
-    display:block;
-    width:55px;
-    height:10px;
-    margin:-23px -11px 13px 0;
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
+.print-icon {
+    width:100%;
+}
+
+
 .print-icon img{
+    display:inline;
+    float:right;
+    margin:74px -15px 0 0;
     width:13px;
     height:10px;
-    padding:0 0 2px 0;
-
-
 }
 
 .print-icon p{
     font-family:'Oswald', sans-serif;
-    display:inline;
-    text-align:right;
     text-transform:uppercase;
     font-weight:lighter;
     color:#b8b8b8;
     font-size:0.75em;
+    display:inline;
+    float:right;
+    margin:70px 0 0 0;
 }
+
 
 .article-image {
     width:100%;
     margin:20px 0 0 0;
-
 }
 
 article p {
@@ -475,73 +350,48 @@ article p {
     font-size:1em;
     color:#878787;
     font-weight:normal;
+    line-height:1.5em;
 }
 
-.ingredients {
-
-    font-family:'Patrick Hand', cursive;
-    font-size:1.25em;
-    font-weight:lighter;
-    color:#939393;
-    margin:30px 0 0 0;
-    height:325px;
-    width:100%;
-
+.ruled-paper {
+    height:300px;
     background-image: url(../img/list-bg.png);
-    background-repeat: repeat-y;
-    background-size: 100%;
-    /*background-color: lightblue;*/
-
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-
-    -webkit-column-gap: 50px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 50px; /* Firefox */
-    column-gap: 50px;
-
-    -webkit-column-width: 100px; /* Chrome, Safari, Opera */
-    column-width: 100px;
-
+    background-repeat:no-repeat;
+    width:100%;
+    background-size: cover;
 }
 
 .ingredients-left-side {
+    font-family:'Patrick Hand', cursive;
+    font-size:1.40em;
+    font-weight:lighter;
+    color:#939393;
     margin:40px 0 0px 75px;
-    height:325px;
-    line-height: 1.65em;
+    /*height:325px; */
+    line-height: 1.50em;
 }
 
 .ingredients-right-side {
-    margin:0px 0 0px 0px;
-    height:325px;
-    line-height: 1.65em;
+    font-family:'Patrick Hand', cursive;
+    font-size:1.40em;
+    font-weight:lighter;
+    color:#939393;
+    margin:40px 0 0px 0px;
+    /*height:325px;*/
+    line-height: 1.50em;
+}
+
+.author-section {
+    border-top: solid 20px grey;
+    -webkit-border-image:url(../img/horizontal_border.png) 30 30 round; /* Safari 3.1-5 */
+    -o-border-image:url(../img/horizontal_border.png) 30 30 round; /* Opera 11-12.1 */
+    border-image:url(../img/horizontal_border.png) 30 30 round;
+    padding-top:30px;
+    margin-top:20px;
 }
 
 .author {
     font-family:'Droid Serif', serif;
-    margin:50px 0 0 0;
-    height:150px;
-    width:100%;
-    padding:20px 0 0 0;
-
-    border-top: solid 20px grey;
-    /*
-    border-width:10px 10px 10px 10px;
-
-
-    /*border-image: url(../img/horizonal_border.png);
-
-    border-image: url(../img/horizonal_border.png) 25 30 10 20 repeat stretch;
-
-
-    border-image: url(../img/horizontal_border.png) 25 30 10 20 repeat stretch;
-    */
-
-    -webkit-border-image:url(../img/horizontal_border.png) 30 30 round; /* Safari 3.1-5 */
-    -o-border-image:url(../img/horizontal_border.png) 30 30 round; /* Opera 11-12.1 */
-    border-image:url(../img/horizontal_border.png) 30 30 round;
-
-
 }
 
 .author img {
@@ -564,10 +414,11 @@ article p {
     color:#595959;
     float:left;
     padding:0;
-    margin:30px 0 0 -180px;
-    width:560px;
+    width:90%;
     line-height: 1.50em;
+    margin:-40px 0 0 90px;
 }
+
 
 .author button {
     font-family:'Oswald', sans-serif;
@@ -582,21 +433,21 @@ article p {
     display:inline-block;
     float:right;
     margin:5px 0 0 0;
+    border-radius: 0;
 }
 
-footer {
+.footer-content {
     font-family:'Droid Serif', serif;
     font-size:.85em;
     color:#AAADB7;
     text-align:center;
-
     letter-spacing: 0.25px;
     border-top: 1px solid #e2e2e2;
-    margin:50px 0 0 0;
+    margin-top:65px;
 }
 
 footer img {
-    margin:-25px 5px 0 5px;
+    margin:-20px 5px 20px 5px;
     padding:0 10px 0 10px;
     background-color: white;
     z-index: 10;
@@ -605,3 +456,4 @@ footer img {
 footer p {
     margin:10px 0 0 0;
 }
+
